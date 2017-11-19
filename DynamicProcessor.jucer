@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="AsJtLG" name="DynamicProcessor" displaySplashScreen="1" reportAppUsage="1"
+              splashScreenColour="Dark" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.yourcompany.DynamicProcessor" includeBinaryInAppConfig="1"
+              cppLanguageStandard="11" buildVST="1" buildVST3="0" buildAU="0"
+              buildAUv3="0" buildRTAS="0" buildAAX="0" buildStandalone="1"
+              enableIAA="0" pluginName="DynamicProcessor" pluginDesc="DynamicProcessor"
+              pluginManufacturer="QUA.REJ" pluginManufacturerCode="Manu" pluginCode="Asjt"
+              pluginChannelConfigs="" pluginIsSynth="0" pluginWantsMidiIn="0"
+              pluginProducesMidiOut="0" pluginIsMidiEffectPlugin="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="DynamicProcessorAU" pluginRTASCategory=""
+              aaxIdentifier="com.yourcompany.DynamicProcessor" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
+              jucerVersion="5.1.1">
+  <MAINGROUP id="JeT0FT" name="DynamicProcessor">
+    <GROUP id="{D04F8A9E-A7CF-9536-9788-58B137B43E3D}" name="Resources">
+      <GROUP id="{DD1F34CF-C9A5-A305-0E9B-6A59DE86553A}" name="Fonts">
+        <FILE id="mdHS0h" name="Shkoder 1989 Black.otf" compile="0" resource="1"
+              file="../../../Desktop/edi/Fonts/SHKODER 1989 FREE/Shkoder 1989 Black.otf"/>
+        <FILE id="DISkgh" name="Lombok.otf" compile="0" resource="1" file="../../../Desktop/edi/Fonts/LOMBOK_TYPEFACE/Lombok.otf"/>
+        <FILE id="BdETc8" name="SHPinscher-Regular.otf" compile="0" resource="1"
+              file="../../../Desktop/edi/Fonts/SH Pinscher Font/SHPinscher-Regular.otf"/>
+        <FILE id="achuvE" name="Norsk.ttf" compile="0" resource="1" file="../../../Desktop/edi/Fonts/Norsk Font/Norsk.ttf"/>
+        <FILE id="pD22WW" name="VotuTypeface.ttf" compile="0" resource="1"
+              file="../../../Desktop/edi/Fonts/VotuTypeface/VotuTypeface.ttf"/>
+        <FILE id="VMOMYe" name="ZEBRAIRR.TTF" compile="0" resource="1" file="../../../Desktop/edi/Fonts/ZEBRAIRR.TTF"/>
+        <FILE id="KtgnyF" name="Shkoder 1989 Light.otf" compile="0" resource="1"
+              file="../../../Desktop/edi/Fonts/SHKODER 1989 FREE/Shkoder 1989 Light.otf"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{ACFB8B88-67DA-2E54-84C3-80E0A64122BF}" name="Source">
+      <GROUP id="{F910CD81-6266-90BF-21D3-5F21F3E281DD}" name="AudioClasses">
+        <FILE id="y2MqoQ" name="Compressor.cpp" compile="1" resource="0" file="Source/Compressor.cpp"/>
+        <FILE id="jPljRq" name="Compressor.h" compile="0" resource="0" file="Source/Compressor.h"/>
+        <FILE id="BOFwZR" name="NoiseGate.cpp" compile="1" resource="0" file="Source/NoiseGate.cpp"/>
+        <FILE id="TsSspB" name="NoiseGate.h" compile="0" resource="0" file="Source/NoiseGate.h"/>
+        <FILE id="VhGoWV" name="TransientShaper.cpp" compile="1" resource="0"
+              file="Source/TransientShaper.cpp"/>
+        <FILE id="nDfXGe" name="TransientShaper.h" compile="0" resource="0"
+              file="Source/TransientShaper.h"/>
+      </GROUP>
+      <GROUP id="{56283CAD-B88B-7149-5AA9-BEC83BF8F558}" name="UI Classes">
+        <FILE id="RQ4D3J" name="CompressorComponent.cpp" compile="1" resource="0"
+              file="Source/CompressorComponent.cpp"/>
+        <FILE id="fsGeY9" name="CompressorComponent.h" compile="0" resource="0"
+              file="Source/CompressorComponent.h"/>
+        <FILE id="Q1gwZY" name="DynamicProcessorLAF.h" compile="0" resource="0"
+              file="Source/DynamicProcessorLAF.h"/>
+        <FILE id="ckF4AA" name="NoiseGateComponent.cpp" compile="1" resource="0"
+              file="Source/NoiseGateComponent.cpp"/>
+        <FILE id="BijWMr" name="NoiseGateComponent.h" compile="0" resource="0"
+              file="Source/NoiseGateComponent.h"/>
+        <FILE id="tmjfUn" name="TransientShaperComponent.cpp" compile="1" resource="0"
+              file="Source/TransientShaperComponent.cpp"/>
+        <FILE id="PUGYjF" name="TransientShaperComponent.h" compile="0" resource="0"
+              file="Source/TransientShaperComponent.h"/>
+      </GROUP>
+      <FILE id="sn1cEl" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="dO0dVC" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="U8fNUB" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="oEhKHN" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="DynamicProcessor"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="3" targetName="DynamicProcessor"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../SDKs &amp; Libraries/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>

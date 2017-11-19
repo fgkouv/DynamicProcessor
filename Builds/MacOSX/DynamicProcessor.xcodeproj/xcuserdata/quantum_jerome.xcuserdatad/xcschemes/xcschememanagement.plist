@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>DynamicProcessor - All.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>DynamicProcessor - Shared Code.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>DynamicProcessor - Standalone Plugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>DynamicProcessor - VST.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>00030D8CE07A40B20B1BF852</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>31F762FCE9DCC6927BE9F963</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7D31834A4F5A19628F0E48C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88137C7D123FE20277ED4425</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
