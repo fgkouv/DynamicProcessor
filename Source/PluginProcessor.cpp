@@ -228,7 +228,16 @@ bool DynamicProcessorAudioProcessor::isBusesLayoutSupported (const BusesLayout& 
 
 void DynamicProcessorAudioProcessor::processBlock (AudioSampleBuffer& buffer, MidiBuffer& midiMessages)
 {
-    const float attack = *m_parameters.getRawParameterValue ("transientShaperAttack");
+    
+    float gateAttack = *m_parameters.getRawParameterValue("noiseGateAttack");
+    float gateRelease = *m_parameters.getRawParameterValue("noiseGateRelease");
+    float gateThreshold = *m_parameters.getRawParameterValue("noiseGateThreshold");
+    
+    m_noiseGateProcessor.setAttackTime(gateAttack);
+    m_noiseGateProcessor.setReleaseTime(gateRelease);
+    m_noiseGateProcessor.setThreshold(gateThreshold);
+    
+    m_noiseGateProcessor.processBlock(buffer);
 }
 
 

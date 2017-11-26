@@ -4,6 +4,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 
+#include "NoiseGate.h"
 
 class DynamicProcessorAudioProcessor  : public AudioProcessor
 {
@@ -41,5 +42,8 @@ public:
 private:
     AudioProcessorValueTreeState m_parameters;
 
+    NoiseGate m_noiseGateProcessor;
+    
+    
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DynamicProcessorAudioProcessor)
 };
