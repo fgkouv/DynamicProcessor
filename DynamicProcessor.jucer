@@ -32,6 +32,10 @@
       <GROUP id="{F910CD81-6266-90BF-21D3-5F21F3E281DD}" name="AudioClasses">
         <FILE id="y2MqoQ" name="Compressor.cpp" compile="1" resource="0" file="Source/Compressor.cpp"/>
         <FILE id="jPljRq" name="Compressor.h" compile="0" resource="0" file="Source/Compressor.h"/>
+        <FILE id="Z8Py8h" name="LinearSmoother.cpp" compile="1" resource="0"
+              file="Source/LinearSmoother.cpp"/>
+        <FILE id="T5KEtY" name="LinearSmoother.h" compile="0" resource="0"
+              file="Source/LinearSmoother.h"/>
         <FILE id="BOFwZR" name="NoiseGate.cpp" compile="1" resource="0" file="Source/NoiseGate.cpp"/>
         <FILE id="TsSspB" name="NoiseGate.h" compile="0" resource="0" file="Source/NoiseGate.h"/>
         <FILE id="VhGoWV" name="TransientShaper.cpp" compile="1" resource="0"
